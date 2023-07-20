@@ -9,6 +9,10 @@ export class MusicsService {
   }
 
   findAll() {
+    const user = 'teste oi dfasd fdasdf';
+
+    console.log(user);
+
     return `This action returns all musics`;
   }
 
