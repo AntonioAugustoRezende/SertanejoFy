@@ -5,7 +5,7 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
-import { BsFillPlayCircleFill } from "react-icons/bs";
+import { GrPlayFill } from "react-icons/gr";
 import Image from "next/image";
 
 export default function Home() {
@@ -75,7 +75,7 @@ export default function Home() {
           <div className="grid grid-cols-3 gap-4 mt-4">
             <a
               href="#"
-              className="bg-white/10 rounded overflow-hidden flex items-center gap-4 hover:bg-white/20 transition-colors"
+              className="bg-white/5 group rounded overflow-hidden flex items-center gap-4 hover:bg-white/10 transition-colors"
             >
               <Image
                 src="/images.jpeg"
@@ -84,8 +84,8 @@ export default function Home() {
                 height={104}
               />
               <strong>Gusttavo Lima </strong>
-              <button className="p-2 bg-green-400 text-black rounded-full">
-                <BsFillPlayCircleFill />
+              <button className=" w-12 h-12 pl-0.5 bg-green-400 text-black rounded-full flex items-center justify-center ml-auto mr-8 invisible group-hover:visible">
+                <GrPlayFill />
               </button>
             </a>
           </div>
