@@ -13,7 +13,7 @@ import {
   IoVolumeHighOutline,
 } from "react-icons/io5";
 import { RiRepeatFill } from "react-icons/ri";
-import { BsFilePlay, BsPcDisplay, BsFillVolumeUpFill } from "react-icons/bs";
+import { BsFilePlay, BsPcDisplay } from "react-icons/bs";
 import { HiOutlineQueueList } from "react-icons/hi2";
 import { FiMaximize2 } from "react-icons/fi";
 import { AiOutlineArrowRight, AiOutlinePlus } from "react-icons/ai";

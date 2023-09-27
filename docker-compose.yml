@@ -20,7 +20,7 @@ services:
     container_name: db
     image: postgres:14
     ports:
-      - 5432:5432
+      - 5434:5434
     env_file:
       - .env
     healthcheck:
@@ -29,3 +29,15 @@ services:
       timeout: 5s
       retries: 3
       start_period: 5s
+
+  front:
+    container_name: front
+    build:
+      context: ./sertanejofy-front/
+    ports:
+      - 3000:3000
+    depends_on:
+      - back
+    command: sh -c "npm run dev"
+    volumes:
+      - ./sertanejofy-front/:/app
