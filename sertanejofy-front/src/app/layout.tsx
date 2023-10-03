@@ -1,3 +1,4 @@
+import { PlayerProvider } from "@/contexts/playerContext";
 import "./globals.css";
 import type { Metadata } from "next";
 
@@ -13,7 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className="bg-black text-zinc-50">{children}</body>
+      <body className="bg-black text-zinc-50">
+        <PlayerProvider>
+          <div className="overflow-auto h-[calc(100vh-96px)]">{children}</div>
+        </PlayerProvider>
+      </body>
     </html>
   );
 }
